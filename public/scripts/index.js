@@ -2,7 +2,6 @@ var app = new Vue({
   el: '#app',
   data() {
     return {
-      message: 'Test message',
       banks: {},
       api: 'http://127.0.0.1:4000/api/v1/banks',
       bankName: '',
@@ -52,7 +51,6 @@ var app = new Vue({
         method: 'DELETE',
       })
         .then((data) => {
-          console.log(data);
           this.getAllBanks();
         })
         .catch((err) => {
