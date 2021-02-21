@@ -47,6 +47,7 @@ var app = new Vue({
         });
     },
     deleteBank(id) {
+      if (this.editMode) this.exitEditMode();
       fetch(`${this.api}/${id}`, {
         method: 'DELETE',
       })
