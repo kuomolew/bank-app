@@ -1,3 +1,29 @@
-body {
-  /* background-color: rgba(255, 0, 0, 0.3); */
+.bank-name {
+  text-transform: capitalize;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.edit-icon:hover {
+  fill: green;
+  stroke: green;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  fill: red;
+  stroke: red;
+  cursor: pointer;
+}
+
+#app .form-text span {
+  color: red;
 }

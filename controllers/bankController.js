@@ -42,7 +42,7 @@ exports.createBank = async (req, res) => {
     res.status(201).json({
       status: 'success',
       data: {
-        tour: newBank,
+        bank: newBank,
       },
     });
   } catch (err) {
