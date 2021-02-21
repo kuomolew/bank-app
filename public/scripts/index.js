@@ -3,7 +3,7 @@ var app = new Vue({
   data() {
     return {
       banks: {},
-      api: 'http://127.0.0.1:4000/api/v1/banks',
+      api: '/api/v1/banks',
       bankName: '',
       bankNameError: false,
       bankInterest: null,

@@ -4,7 +4,7 @@ var app = new Vue({
     return {
       banks: {},
       currentBank: {},
-      api: 'http://127.0.0.1:4000/api/v1/banks',
+      api: '/api/v1/banks',
       selectedBankId: '',
       selectedBankDownPayment: 0,
       selectedBankMonth: 0,
@@ -110,7 +110,6 @@ var app = new Vue({
   },
   watch: {
     selectedBankId(val) {
-      console.log(val);
       this.getBank(val);
     },
     initialLoan(val) {
